@@ -83,12 +83,12 @@ export function SkillsChart({ skills }: SkillsChartProps) {
             </div>
 
             {/* Chart */}
-            <div className="p-4">
+            <div className="p-4 w-full">
               <ChartContainer
                 id={`skills-chart-${category}`}
                 config={chartConfig}
                 className="w-full"
-                style={{ height: `${chartHeight}px` }}
+                style={{ height: `${chartHeight}px`, width: "100%" }}
               >
                 <BarChart
                   accessibilityLayer
